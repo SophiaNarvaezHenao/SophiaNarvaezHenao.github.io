@@ -1,17 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Mi Portafolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Portafolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <h1>Hola, soy Sophia</h1>
-    <p>Bienvenidos a mi portafolio. Soy estudiante de programacion en el INEM.</p>
-    <h2>Mis Proyectos</h2>
-    <ul>
-        <li>Proyecto 1: Proyecto IAPES, proyecto de grado 11</li>
-        <li>Proyecto 2: Version Pre eliminar de mi proyecto de grados</li>
-    </ul>
-    <h2>Contacto</h2>
-    <p>Email: <a href="mailto:sophia.narvaezhenao@inemjose.edu.co">sophia.narvaezhenao@inemjose.edu.co</a></p>
+<body class="bg-gray-100 font-sans">
+  <!-- Navbar -->
+  <nav class="bg-blue-600 text-white p-4 sticky top-0">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Mi Portafolio</h1>
+      <ul class="flex space-x-4">
+        <li><a href="#about" class="hover:underline">Acerca</a></li>
+        <li><a href="#projects" class="hover:underline">Proyectos</a></li>
+        <li><a href="#contact" class="hover:underline">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Sección Acerca de mí -->
+  <section id="about" class="py-16">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">Acerca de mí</h2>
+      <p class="text-lg max-w-2xl mx-auto">
+        ¡Hola! Soy Sophia Narvaez Henao, una estudiante de grado 11 estudiando programacion en analitica de datos, apasionada por crear/imaginar y solucionar.
+      </p>
+    </div>
+  </section>
+
+  <!-- Sección Proyectos -->
+  <section id="projects" class="bg-white py-16">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-8">Proyectos</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Proyecto 1 -->
+        <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-2">Proyecto IAPES</h3>
+          <p class="mb-4">Proyecto de grados desarrollado con ayuda de fire base.</p>
+          <a href="#" class="text-blue-600 hover:underline">Ver proyecto</a>
+        </div>
+        <!-- Proyecto 2 -->
+        <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-2">studio</h3>
+          <p class="mb-4">Este es una version pre-eliminar de mi proyecto de grados.</p>
+          <a href="#" class="text-blue-600 hover:underline">Ver proyecto</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Contacto -->
+  <section id="contact" class="py-16">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">Contacto</h2>
+      <p class="text-lg mb-4">Puedes contactarme en:</p>
+      <p>Email: <a href="mailto:sophia.narvaezhenao@inemjose.edu.co" class="text-blue-600 hover:underline">sophia.narvaezhenao@inemjose.edu.co</a></p>
+      <p>GitHub: <a href="https://github.com/SophiaNarvaezHenao" class="text-blue-600 hover:underline">github.com/SophiaNarvaezHenao</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-600 text-white p-4 text-center">
+    <p>&copy; 2025 [Tu Nombre]. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
